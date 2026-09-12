@@ -249,15 +249,6 @@ else{
           playerMoves.push_back(0);
           awaitingInput = false;
           resetSwipeVars();
-
-          // Serial.print("playerMoves size: ");
-          // Serial.println(playerMoves.size());
-          // Serial.print("Player Moves: ");
-          // for(int i = 0; i<playerMoves.size(); i++){
-          //   Serial.print(playerMoves.at(i));
-          //   Serial.print(" ");
-          // }
-          // Serial.println();
         }
       }
     }
@@ -348,16 +339,3 @@ else{
 
   }
 }} // end else and void loop
-
-
-/* NEED INTEGRATE:
- - LCD Screen [done]
- - L/R arrow display [done]
- - memory for machine output  -> prob just use 0's and 1's to track L/R. Array or vector ig. 
-    - if vector, could just keep going until user messes up. Display the number they got right?
- - memory for user input
- - comparison of the two
-
- - serial prints to give directions before entering void loop somehow, or a while loop that will only run once (bool once user gives okay to move on past directions)
-
-*/
