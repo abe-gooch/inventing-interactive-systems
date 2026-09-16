@@ -17,3 +17,7 @@
 == AI USE ==
 - obtain psuedocode for implementing the time element to the swipe
 - identify where I was referencing an index outside of bounds in my vector (it was causing the esp to restart the program repeatedly)
+
+
+== YOUTUBE DOCUMENTATION LINK ==
+https://youtu.be/RNDBFan_ODY 
