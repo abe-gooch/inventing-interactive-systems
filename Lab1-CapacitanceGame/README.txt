@@ -7,9 +7,12 @@
 - each round runs through the whole sequence of inputs
 - the player knows when it is their turn to input because the LED turns on, and off again once it is the system's turn
 
+
 == HOW TO RUN THE PROGRAM ==
+- construct the circuit as shown in the png file in the directory folder. Note that the ESP pictured is not the exact same as the one we use, but it was the closest I could find. The wires line up as if the pins on the board were the same as our ESP32.
 - simply upload the code to the ESP32, the game will begin automatically
 - if the player loses the game restarts
+
 
 == AI USE ==
 - obtain psuedocode for implementing the time element to the swipe
