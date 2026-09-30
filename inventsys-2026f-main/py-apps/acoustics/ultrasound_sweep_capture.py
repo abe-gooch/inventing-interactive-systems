@@ -50,9 +50,9 @@ DISPLAY_MAX_FREQUENCY = 22050 # at most can be SAMPLE_RATE / 2 (the nyquist freq
 # CHANGE THESE TO MATCH YOUR SYSTEM
 # Set to the below to None to use the system defaults.
 # Input is microphone
-INPUT_DEVICE = 0 
+INPUT_DEVICE = 1 
 # Output is speaker 
-OUTPUT_DEVICE = 3 #not checked if this is speakers
+OUTPUT_DEVICE = 4
 
 
 # -----------------------------

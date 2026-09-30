@@ -33,10 +33,14 @@ DISPLAY_SECONDS = 10
 DISPLAY_MIN_FREQUENCY = 0
 DISPLAY_MAX_FREQUENCY = 22050 # at most can be SAMPLE_RATE / 2 (the nyquist frequency)
 
+FREQUENCY_RESOLUTION = SAMPLE_RATE / FFT_SIZE
+print("Frequency Resolution (in Hz): ")
+print(FREQUENCY_RESOLUTION)
+
 # CHANGE THESE TO MATCH YOUR SYSTEM
 # Set to the below to None to use the system defaults.
 # Input is microphone
-INPUT_DEVICE = 0 
+INPUT_DEVICE = 1 
 
 
 # The callback writes microphone data here.
@@ -121,7 +125,7 @@ def compute_fft(block):
     magnitude = np.abs(spectrum) / np.sum(window)
     magnitude_db = 20 * np.log10(np.maximum(magnitude, 1e-10))
     
-    return magnitude_db[min_bin:max_bin]
+    return magnitude_db[min_bin:max_bin] 
 
 
 # Updates the plot with the latest spectrogram data
