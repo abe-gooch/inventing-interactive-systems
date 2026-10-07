@@ -294,12 +294,21 @@ def detect_clap(low, mid_low, mid, mid_high, high, very_high):
     currTime = time.time()
 
     clap = ( # the approximate bin envelope of a clap
+        # bedroom values
+        # -60 > low > -79
+        # and -66 > mid_low > -92
+        # and -87 > mid > -98
+        # and -83 > mid_high > -102
+        # and -62 > high > -93
+        # and -87 > very_high > -105
+
+        #attempted classroom values
         -60 > low > -79
-        and -66 > mid_low > -92
-        and -87 > mid > -98
-        and -83 > mid_high > -102
+        and -66 > mid_low > -90
+        and -87 > mid > -93
+        and -83 > mid_high > -93
         and -62 > high > -93
-        and -87 > very_high > -105
+        and -87 > very_high > -100
     )
 
     # Handle timeout of a possible double clap
